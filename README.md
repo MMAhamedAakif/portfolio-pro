@@ -1,3 +1,3 @@
 Portfolio Project 
 
-<img width="1906" height="1071" alt="image" src="https://github.com/user-attachments/assets/95a5b4bc-1d39-4711-b9d7-8286b2dccf56" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/46e0d43c-ad3a-465c-a2b6-23f1cd2a00ed" />
