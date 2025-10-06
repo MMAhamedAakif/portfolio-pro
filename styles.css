@@ -37,8 +37,37 @@ body{
 
 header{
     display: flex;
-    align-items:center ;
-    justify-content: center;
+    align-items: center ;
+    justify-content: space-between;
     width: 100%;
+    padding: 20px 10%;
+
+}
+.name{
+    display: flex;
+}
+
+.logo{
+    padding: 10px 4px;
+}
+span{
+    color:var(--hover-color);
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a {
+    color: var(--text-color);
+    padding: 20px 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.navlist a:hover{
+    color: var(--hover-color);
+
 }
 
