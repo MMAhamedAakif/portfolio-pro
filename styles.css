@@ -305,16 +305,24 @@ a.btn:nth-child(2)::before{
 }
 
 .img-box img{
-    width: 100%;
-    max-width: 350px;
+    width: 80%;
     height: auto;
 }
 
-.liquid-shape{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    top: 10%;
+    /* SVG blob styling */
+    .blob {
+      width: 400px;
+      height: 250px;
+      filter: drop-shadow(0 0 25px #12f7ff);
+      animation: rotate 20s linear infinite;
+    }
 
-}
+    /* Slow rotation */
+    /* @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    } */
