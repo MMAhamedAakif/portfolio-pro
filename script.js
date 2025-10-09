@@ -42,24 +42,24 @@ let changeText = ()=>{
 changeText()
 setInterval(changeText, 3000)
 
-// circle skills//////////////////////////////////////
+// circle skills ////////////////////////////////////////
 const circle = document.querySelectorAll('.circle');
-circle.forEach(elem=>{
-    var dots =elem.getAttribute("data-dots");
-    var marked =elem.getAttribute("data-percent");
-    var percent = Math.floor(dots*marked/100);
-    var points = "";
-    var rotate = 360 / dots;
 
+circle.forEach(elem => {
+  const dots = elem.getAttribute("data-dots");
+  const marked = elem.getAttribute("data-percent");
+  const percent = Math.floor(dots * marked / 100);
+  const rotate = 360 / dots;
+  let points = "";
 
-    for (let i=0 ; i< dots; i++){
-        points+=<div class="points" style="--i:${i}; --rot:$(rotate)deg"></div>;
-    }
-    elem.innerHTML=points;
+  for (let i = 0; i < dots; i++) {
+    points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+  }
 
-    const pointsMarked =elem.querySelectorAll('.points');
-    for(let i=0; i< percent; i++){
-    pointsMarked[i].classList.add('marked')
-}
-    
-})
+  elem.innerHTML = points;
+
+  const pointsMarked = elem.querySelectorAll('.points');
+  for (let i = 0; i < percent; i++) {
+    pointsMarked[i].classList.add('marked');
+  }
+});
