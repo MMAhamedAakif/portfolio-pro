@@ -599,7 +599,7 @@ svg {
     position: relative;
 }
 
-.skill-bar .bar span{
+.skill-bar .bar span {
     width: 50%;
     height: 100%;
     position: absolute;
@@ -610,47 +610,51 @@ svg {
 
 }
 
-.skill-bar .bar .html{
+.skill-bar .bar .html {
     width: 85%;
     animation: html 2s;
 }
-.skill-bar .bar .figma{
+
+.skill-bar .bar .figma {
     width: 80%;
     animation: figma 3s;
 
 }
-.skill-bar .bar .javascript{
+
+.skill-bar .bar .javascript {
     width: 72%;
     animation: javascript 4s;
 
 }
-.skill-bar .bar .css{
+
+.skill-bar .bar .css {
     width: 95%;
     animation: css 5s;
 
 }
+
 /* skills right  */
 
-.professional{
+.professional {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
 }
 
-.box{
+.box {
     position: relative;
     margin: 10px 0;
     flex: 1 1 15rem;
-    
+
 }
 
-.box .text{
+.box .text {
     text-align: center;
     color: #fff;
     font-size: 1rem;
 }
 
-.box .text big{
+.box .text big {
     font: 400;
     letter-spacing: 1px;
     position: absolute;
@@ -658,51 +662,126 @@ svg {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.box .text small{
+
+.box .text small {
     display: block;
     font-weight: 600;
 }
 
-.circle{
+.circle {
     width: 100%;
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #fff;
 
 
 }
 
-.circle .points{
+.circle .points {
     width: 2px;
     height: 10px;
     background-color: var(--bg-color);
     position: absolute;
-    border-radius: 3px ;
-    transform: rotate(calc(var(--i)*var(--rot))) translateY( -45px);
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+
+}
+
+.points.marked {
     animation: glow 0.04s linear forwards;
     animation-delay: calc(var(--i)*0.05s);
 }
 
 
+/* Project ////////////////////////////////////////////////////////////// */
+
+.container {
+
+    margin: 2rem;
+    text-align: center;
+}
+
+portfolio {
+    left: 5%;
+}
+
+.fillter-buttons {
+    margin: 2rem;
+    text-align: center;
+}
+
+.fillter-buttons .btn {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: 1.3rem;
+    color: var(--text-color);
+
+}
 
 
+.fillter-buttons .btn:hover {
+    color: var(--hover-color);
+
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 2rem;
+
+}
+/* 
+.port-box {
+    border-radius: 15px;
+    overflow: hidden;
+    background: #292e33;
+    display: flex;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    border: 2px solid var(--hover-color);
+    box-shadow: var(--neon-box-shodow);
+} */
+/* 
+.port-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+} */
+
+/* .port-image img {
+    width: 100%;
+    opacity: .5s;
+    height: 100%;
+    transition: .5s;
+} */
+
+/* .port {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0.2), #12f7ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5%;
+    padding: 0 2rem;
+
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ */
 
 
 
@@ -760,45 +839,53 @@ svg {
 
 }
 
-@keyframes html{
-    0%{
+@keyframes html {
+    0% {
         width: 0%;
     }
+
     100% {
-        width:85%;
-    }
-}
-@keyframes figma{
-    0%{
-        width: 0%;
-    }
-    100% {
-        width:80%;
-    }
-}
-@keyframes javascript{
-    0%{
-        width: 0%;
-    }
-    100% {
-        width:72%;
-    }
-}
-@keyframes css{
-    0%{
-        width: 0%;
-    }
-    100% {
-        width:95%;
+        width: 85%;
     }
 }
 
-@keyframes glow{
-    0%{
+@keyframes figma {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 72%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes glow {
+    0% {
         background: var(--bg-color);
         box-shadow: none;
     }
-    100%{
+
+    100% {
         background: var(--hover-color);
         box-shadow: var(--neon-box-shodow);
     }
