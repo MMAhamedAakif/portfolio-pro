@@ -756,14 +756,14 @@ portfolio {
     width: 100%;
 } */
 
-/* .port-image img {
+.port-image img {
     width: 100%;
     opacity: .5s;
     height: 100%;
     transition: .5s;
-} */
+}
 
-/* .port {
+.port {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -781,7 +781,7 @@ portfolio {
 }
 
 
- */
+
 
 
 
