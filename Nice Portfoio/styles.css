@@ -736,7 +736,7 @@ portfolio {
     gap: 2rem;
 
 }
-/* 
+
 .port-box {
     border-radius: 15px;
     overflow: hidden;
@@ -746,15 +746,15 @@ portfolio {
     align-items: center;
     border: 2px solid var(--hover-color);
     box-shadow: var(--neon-box-shodow);
-} */
-/* 
+}
+
 .port-image {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-} */
+}
 
 .port-image img {
     width: 100%;
